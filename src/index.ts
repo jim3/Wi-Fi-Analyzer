@@ -42,12 +42,12 @@ const checkSession = async () => {
 checkSession();
 
 // -------------------------------------------------------- //
-// "returns a `Promise` that resoves with an array of SensorData objects" 0.o
+
 const getRFSensors = async (): Promise<SensorData[]> => {
     const response = await axios.get(`${url}${rfsensor}`);
     const data = response.data;
 
-    let arr: SensorData[] = []; // array of objects that conforms to the SensorData interface (aka, must be of `String` type)
+    let arr: SensorData[] = []; 
     try {
         for (let d of data) {
             if (d !== null) {
@@ -89,7 +89,7 @@ const getRelatedClients = async (): Promise<Clients> => {
     } catch (error) {
         console.error("Error fetching access points:", error);
     }
-    // console.log(util.inspect(clients, false, null));
+    
     return clients;
 };
 
