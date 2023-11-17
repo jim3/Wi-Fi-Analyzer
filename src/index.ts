@@ -60,8 +60,7 @@ const getRFSensors = async (): Promise<SensorData[]> => {
         }
     } catch (error) {
         console.error("Error fetching RF sensors:", error);
-    }
-    console.log(util.inspect(arr, false, null));
+    }    
     return arr;
 };
 
