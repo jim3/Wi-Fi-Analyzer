@@ -45,3 +45,14 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 6.  Open the QuestDB console web interface at http://localhost:9000 and run your SQL queries
 
 7.  Open the Grafana web interface at http://localhost:3000 and create your dashboards (to be updated)
+
+---
+
+Currently working on...but nowhere near done....
+
+- Send the parsed data of network traffic from LAN to public ip address (my personal website) via MQTT pipeline.
+- On website, a similar Node.js app will send data to QuestDB in order to create sql queries and send results to a Grafana dashboard.
+- Grafana will display data in real-time (or as close to real-time as I can get).
+
+  ---
+  
