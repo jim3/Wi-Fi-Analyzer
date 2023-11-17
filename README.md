@@ -51,7 +51,7 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 Currently working on...but nowhere near done....
 
 - Send the parsed data of network traffic from LAN to public ip address (my personal website) via MQTT pipeline.
-- On website, a similar Node.js app will send data to QuestDB in order to create sql queries and send results to a Grafana dashboard.
+- On website, a similar Node.js app will send data to QuestDB, extract meaningful results from database and send to a Grafana dashboard.
 - Grafana will display data in real-time (or as close to real-time as I can get).
 
   ---
