@@ -4,22 +4,17 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 
 ### Tech Stack
 
-
-### Software
+**Software**
 
 [TypeScript](https://www.typescriptlang.org/) - TypeScript is JavaScript with syntax for types.
 
 [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
 
-[QuestDB](https://questdb.io/) - QuestDB is an open-source time-series database for high throughput ingestion and fast SQL queries with operational simplicity
-
-[Axios](https://axios-http.com) - Promise based HTTP client for the browser and node.js
-
 [Kismet Wireless API](https://www.kismetwireless.net/docs/api) - Restful API for Kismet Wireless
 
 [RTL_433](https://github.com/merbanan/rtl_433) - Program to decode radio transmissions from devices on the ISM bands. Amazing project!
 
-### Hardware
+**Hardware**
 
 [RTL-SDR V3](https://www.rtl-sdr.com/about-rtl-sdr/) - RTL-SDR V3 RTL2832U SDR
 
@@ -47,12 +42,3 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 7.  Open the Grafana web interface at http://localhost:3000 and create your dashboards (to be updated)
 
 ---
-
-Currently working on...but nowhere near done....
-
-- Send the parsed data of network traffic from LAN to public ip address (my personal website) via MQTT pipeline.
-- On website, a similar Node.js app will send data to QuestDB, extract meaningful results from database and send to a Grafana dashboard.
-- Grafana will display data in real-time (or as close to real-time as I can get).
-
-  ---
-  
