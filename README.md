@@ -28,17 +28,8 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 2.  Install NPM packages
     `npm install`
 
-3.  Start up the containerized QuestDB and Grafana instances
-    `docker-compose up -d`
-
-4.  Compile the TypeScript code
+3.  Compile the TypeScript code
     `tsc ./src/index.ts`
 
-5.  Run the compiled JavaScript code
+4.  Run the compiled JavaScript code
     `node ./src/index.js`
-
-6.  Open the QuestDB console web interface at http://localhost:9000 and run your SQL queries
-
-7.  Open the Grafana web interface at http://localhost:3000 and create your dashboards (to be updated)
-
----
