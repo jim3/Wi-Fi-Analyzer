@@ -12,8 +12,6 @@ TypeScript program that parses Wi-Fi network traffic from the Kismet API.
 
 [Kismet Wireless API](https://www.kismetwireless.net/docs/api) - Restful API for Kismet Wireless
 
-[MongoDB Atlas](https://www.mongodb.com/atlas)
-
 [RTL_433](https://github.com/merbanan/rtl_433) - Program to decode radio transmissions from devices on the ISM bands. Amazing project!
 
 **Hardware**
