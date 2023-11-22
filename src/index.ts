@@ -1,7 +1,6 @@
 import axios from "axios";
 import * as dotenv from "dotenv";
 import * as util from "util";
-import mqtt from "mqtt";
 
 dotenv.config();
 const username = process.env.USERNAME;
@@ -11,13 +10,6 @@ const port = process.env.PORT;
 const url = `http://${username}:${password}@${server}:${port}`;
 const accesspoints = "/devices/views/phydot11_accesspoints/devices.json";
 const rfsensor = "/devices/views/phy-RFSENSOR/devices.json";
-
-// mqtt option object
-const options = {
-    host: process.env.MQTT_SERVER as string,
-    port: process.env.MQTT_PORT as unknown as number,
-};
-const client = mqtt.connect(options); // connect to the mqtt broker
 
 // Interface for SensorData objects
 interface SensorData {
@@ -115,8 +107,6 @@ async function main() {
             });
         }
     }
-    // close mqtt connection
-    client.end();
 }
 
 main();
