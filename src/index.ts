@@ -44,7 +44,7 @@ const getRFSensors = async (): Promise<SensorData[]> => {
     } catch (error) {
         console.error("Error fetching RF sensors:", error);
     }
-    console.log(util.inspect(arr, false, null));
+    
     return arr;
 };
 
@@ -71,7 +71,7 @@ const getRelatedClients = async (): Promise<Clients> => {
     } catch (error) {
         console.error("Error fetching access points:", error);
     }
-    console.log(util.inspect(clients, false, null));
+    
     return clients; // { ssid: [ {}, {}, {} ] }
 };
 
