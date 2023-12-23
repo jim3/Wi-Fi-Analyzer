@@ -1,13 +1,10 @@
 ### Wi-Fi-Analyzer
 
-This Node.js script is part of a 3-part project. This app is responsiable for parsing live Wi-Fi network traffic using the [Kismet](https://kismetwireless.net) API and sending it to a Node.js app located at a live server/domain. 
-That app will use SSE to display the results in real-time using Chart.js for the visualization. Another IoT related app will also send data to the live server.
+This app parses Wi-Fi network traffic using the [Kismet](https://kismetwireless.net) API.
 
 ### Tech Stack
 
 **Software**
-
-[TypeScript](https://www.typescriptlang.org/)
 
 [Node.js](https://nodejs.org/en/)
 
